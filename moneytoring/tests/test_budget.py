@@ -1,11 +1,6 @@
-from pytest import mark, fixture
+from pytest import mark
 from datetime import datetime
 from moneytoring.query import get_data_by_year, get_total_expenses, get_total_incomes, get_years
-
-
-@fixture
-def mocks_dataset():
-    ds = []
 
 
 @mark.parametrize('dataset', [[["2020-10-22", "CARTE", 15.00, 'M DUPONT']], [[datetime.now(), "CARTE", 1, 'M DUPONT']]])

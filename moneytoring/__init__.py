@@ -1,5 +1,3 @@
-import os
-
 from .query import get_data_by_year
 from .query import get_total_expenses
 from .query import get_total_incomes

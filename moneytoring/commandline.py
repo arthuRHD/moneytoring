@@ -1,4 +1,3 @@
-import os
 import sys
 from .query import *
 from .parser import get_parsed_data
