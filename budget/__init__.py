@@ -1,14 +1,15 @@
-import sys
-import os
-import shutil
+from .parser import get_parsed_data
+from .parser import print_raw_data
+from .query import get_data_by_year
+from .query import get_total_expenses
+from .query import get_total_incomes
+from .query import get_years
 
-
-def setup_csv():
-    path = sys.argv[1]
-    try:
-        with open(path, "r") as src:
-            with open(os.path.join(os.path.dirname(__file__), "transactions.csv"), "w+") as dst:
-                data = src.read()
-                dst.write(data)
-    except Exception:
-        pass
+__all__ = [
+    "get_parsed_data",
+    "print_raw_data",
+    "get_data_by_year",
+    "get_total_expenses",
+    "get_total_incomes",
+    "get_years"
+]

@@ -26,7 +26,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'setup-csv=budget:setup_csv',
+            'setup-csv=budget.csv:setup_csv',
             'summary=budget.commandline:summary',
             'summary-year=budget.commandline:yearly_summary',
             'summary-filter=budget.commandline:filter_dest',
