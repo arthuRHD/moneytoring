@@ -1,6 +1,6 @@
 from pytest import mark, fixture
 from datetime import datetime
-from budget import get_data_by_year, get_total_expenses, get_total_incomes
+from moneytoring import get_data_by_year, get_total_expenses, get_total_incomes
 
 
 @mark.parametrize('dataset', [[["2020-10-22", "CARTE", 15.00, 'M DUPONT']], [[datetime.now(), "CARTE", 1, 'M DUPONT']]])
