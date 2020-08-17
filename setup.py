@@ -26,10 +26,12 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'summary=budget:summary',
-            'summary-year=budget:yearly_summary',
-            'summary-filter=budget:filter_dest',
-            'budget=budget:report_budget'
+            'setup-csv=budget:setup_csv',
+            'summary=budget.commandline:summary',
+            'summary-year=budget.commandline:yearly_summary',
+            'summary-filter=budget.commandline:filter_dest',
+            'budget=budget.commandline:report_budget',
+            'budget-help=budget.commandline:help_cmd'
 
         ]
     }

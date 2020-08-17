@@ -1,4 +1,3 @@
-from .parser import print_raw_data
 from .parser import get_parsed_data
 
 parsed_dataset = get_parsed_data()
