@@ -4,15 +4,15 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="budget",  # Replace with your own username
-    version="0.2.0",
+    name="moneytoring",  # Replace with your own username
+    version="0.1.0",
     author="Arthur RICHARD",
     author_email="arthur.richard@protonmail.com",
     description="A python budgeting tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/arthuRHD/budget",
-    packages=['budget'],
+    url="https://github.com/arthuRHD/moneytoring",
+    packages=['moneytoring'],
     package_data={
         "": ["*.csv"]
     },
@@ -26,12 +26,12 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'setup-csv=budget.csv:setup_csv',
-            'summary=budget.commandline:summary',
-            'summary-year=budget.commandline:yearly_summary',
-            'summary-filter=budget.commandline:filter_dest',
-            'budget=budget.commandline:report_budget',
-            'budget-help=budget.commandline:help_cmd'
+            'setup-csv=moneytoring.csv:setup_csv',
+            'summary=moneytoring.commandline:summary',
+            'summary-year=moneytoring.commandline:yearly_summary',
+            'summary-filter=moneytoring.commandline:filter_dest',
+            'moneytoring=moneytoring.commandline:report_budget',
+            'moneytoring-help=moneytoring.commandline:help_cmd'
 
         ]
     }

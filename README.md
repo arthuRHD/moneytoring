@@ -1,19 +1,20 @@
-# Python budgeting package
-![Upload Python Package](https://github.com/arthuRHD/budget/workflows/Upload%20Python%20Package/badge.svg)
+# Python moneytoring package
+
+![Upload Python Package](https://github.com/arthuRHD/moneytoring/workflows/Upload%20Python%20Package/badge.svg)
 
 Parse a CSV file to display data.
 
 ## Install
 
 ```sh
-pip3 install budget
+pip3 install moneytoring
 setup-csv <path_of_your_csv>
 ```
 
 ## Usage
 
 ```sh
-budget <salary> <number_of_months>
+moneytoring <salary> <number_of_months>
 summary
 summary-year <number_of_the_year>
 summary-year all
