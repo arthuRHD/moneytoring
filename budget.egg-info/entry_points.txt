@@ -1,0 +1,6 @@
+[console_scripts]
+budget = budget:report_budget
+summary = budget:summary
+summary-filter = budget:filter_dest
+summary-year = budget:yearly_summary
+

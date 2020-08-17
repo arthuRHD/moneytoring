@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: budget
+Version: 0.1.0
+Summary: A python budgeting tool
+Home-page: https://github.com/arthuRHD/budget
+Author: Arthur RICHARD
+Author-email: arthur.richard@protonmail.com
+License: UNKNOWN
+Description: # Python budgeting package
+        
+        Parse a CSV file to display data.
+        
+        ## Range of visualization
+        
+        - Total expenses
+        - Total incomes
+        - Expenses by year
+        - Incomes by year
+        
+        ## Author
+        
+        Arthur RICHARD
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
