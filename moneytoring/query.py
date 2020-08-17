@@ -1,19 +1,14 @@
-from .parser import get_parsed_data
-
-parsed_dataset = get_parsed_data()
-
-
-def get_years():
+def get_years(dataset):
     years = []
-    for row in parsed_dataset:
+    for row in dataset:
         if row[0].year not in years:
             years.append(row[0].year)
     return years
 
 
-def get_data_by_year(year_input):
+def get_data_by_year(year_input, dataset):
     year_dataset = []
-    for row in parsed_dataset:
+    for row in dataset:
         if row[0].year == year_input:
             year_dataset.append(row)
     return year_dataset

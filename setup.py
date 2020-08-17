@@ -18,7 +18,7 @@ setup(
     },
     python_requires='>=3.6',
     setup_requires=['pytest-runner'],
-    tests_require=['pytest'],
+    tests_require=['tox'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

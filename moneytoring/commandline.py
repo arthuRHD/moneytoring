@@ -1,6 +1,9 @@
-from .query import *
-import sys
 import os
+import sys
+from .query import *
+from .parser import get_parsed_data
+
+parsed_dataset = get_parsed_data()
 
 
 def help_cmd():
@@ -37,17 +40,17 @@ def report_budget():
 def yearly_summary():
     year_input = sys.argv[1]
     if year_input == "all":
-        for year in get_years():
+        for year in get_years(parsed_dataset):
             print("--------------------")
             print(
-                f"Dépensé en {str(year)} : \033[91m{round(get_total_expenses(get_data_by_year(year)),2)} €\033[0m")
+                f"Dépensé en {str(year)} : \033[91m{round(get_total_expenses(get_data_by_year(year), parsed_dataset),2)} €\033[0m")
             print(
-                f"Obtenu en {str(year)} : \033[92m{round(get_total_incomes(get_data_by_year(year)), 2)} €\033[0m")
+                f"Obtenu en {str(year)} : \033[92m{round(get_total_incomes(get_data_by_year(year), parsed_dataset), 2)} €\033[0m")
     else:
         print(
-            f"Dépensé en {str(year_input)} : \033[91m{round(get_total_expenses(get_data_by_year(int(year_input))),2)} €\033[0m")
+            f"Dépensé en {str(year_input)} : \033[91m{round(get_total_expenses(get_data_by_year(int(year_input), parsed_dataset)),2)} €\033[0m")
         print(
-            f"Obtenu en {str(year_input)} : \033[92m{round(get_total_incomes(get_data_by_year(int(year_input))), 2)} €\033[0m")
+            f"Obtenu en {str(year_input)} : \033[92m{round(get_total_incomes(get_data_by_year(int(year_input), parsed_dataset)), 2)} €\033[0m")
 
 
 def summary():
