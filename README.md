@@ -1,6 +1,7 @@
 # Python moneytoring package
 
 ![PyPI](https://github.com/arthuRHD/moneytoring/workflows/Upload%20Python%20Package/badge.svg)
+![Issues](https://img.shields.io/github/issues/arthuRHD/moneytoring?style=flat-square)
 
 Parse a CSV file and visualize data with CLI tools
 
