@@ -1,6 +1,6 @@
 # Python moneytoring package
 
-![Upload Python Package](https://github.com/arthuRHD/moneytoring/workflows/Upload%20Python%20Package/badge.svg)
+![PyPI](https://github.com/arthuRHD/moneytoring/workflows/Upload%20Python%20Package/badge.svg)
 
 Parse a CSV file to display data.
 
