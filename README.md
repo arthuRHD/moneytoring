@@ -1,4 +1,5 @@
 # Python budgeting package
+![Upload Python Package](https://github.com/arthuRHD/budget/workflows/Upload%20Python%20Package/badge.svg)
 
 Parse a CSV file to display data.
 
