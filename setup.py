@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="budget",  # Replace with your own username
-    version="0.1.0",
+    version="0.2.0",
     author="Arthur RICHARD",
     author_email="arthur.richard@protonmail.com",
     description="A python budgeting tool",
