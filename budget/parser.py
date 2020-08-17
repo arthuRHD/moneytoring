@@ -3,8 +3,8 @@ import os
 from datetime import datetime
 
 csv_file_path = os.path.join(os.path.dirname(__file__), "transactions.csv")
-
-reader = csv.reader(open(csv_file_path))
+if os.path.exists(csv_file_path):
+    reader = csv.reader(open(csv_file_path))
 
 
 def print_raw_data():
