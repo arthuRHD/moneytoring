@@ -1,6 +1,6 @@
 from pytest import mark, fixture
 from datetime import datetime
-from moneytoring import get_data_by_year, get_total_expenses, get_total_incomes, get_years
+from moneytoring.query import get_data_by_year, get_total_expenses, get_total_incomes, get_years
 
 
 @fixture
