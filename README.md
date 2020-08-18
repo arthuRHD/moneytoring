@@ -17,7 +17,8 @@ setup-csv <path_of_your_csv>
 ## Usage
 
 ```sh
-moneytoring <monthly_salary> <number_of_months>
+moneytoring <monthly_salary> <number_of_months> <current_capital>
+moneytoring-help
 summary
 summary-year <number_of_the_year>
 summary-year all
