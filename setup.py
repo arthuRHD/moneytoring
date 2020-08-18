@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="moneytoring",  # Replace with your own username
-    version="1.3.0",
+    version="1.3.2",
     author="Arthur RICHARD",
     author_email="arthur.richard@protonmail.com",
     description="A python budgeting tool",
