@@ -3,3 +3,5 @@ __pycache__
 moneytoring.egg-info
 .eggs
 .tox
+.coverage
+coverage.xml
