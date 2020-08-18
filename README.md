@@ -1,5 +1,7 @@
 # Python moneytoring package
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/092eb41ccb7c4f18b32eaa35b54fffc6)](https://app.codacy.com/manual/arthur.richard2299/moneytoring?utm_source=github.com&utm_medium=referral&utm_content=arthuRHD/moneytoring&utm_campaign=Badge_Grade_Dashboard)
+
 ![PyPI](https://github.com/arthuRHD/moneytoring/workflows/Upload%20Python%20Package/badge.svg)
 ![Issues](https://img.shields.io/github/issues/arthuRHD/moneytoring?style=flat-square)
 
