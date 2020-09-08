@@ -6,11 +6,21 @@ from .test_parser import setup_csv_fixture
 
 
 def test_summary_execution(setup_csv_fixture):
+    """
+
+    Args:
+        setup_csv_fixture ([type]): [description]
+    """
     assert summary()
     assert summary(parsed_dataset=[])
 
 
 def test_help_execution(setup_csv_fixture):
+    """
+
+    Args:
+        setup_csv_fixture ([type]): [description]
+    """
     assert help_cmd()
 
 
@@ -22,6 +32,13 @@ def test_help_execution(setup_csv_fixture):
     "2017",
 ])
 def test_summary_yearly_working(year, get_dataset_with_multiple_years, setup_csv_fixture):
+    """
+
+    Args:
+        year ([type]): [description]
+        get_dataset_with_multiple_years ([type]): [description]
+        setup_csv_fixture ([type]): [description]
+    """
     dataset = get_dataset_with_multiple_years
     try:
         assert yearly_summary(year_input=year, parsed_dataset=dataset)
@@ -36,6 +53,13 @@ def test_summary_yearly_working(year, get_dataset_with_multiple_years, setup_csv
     "&&&",
 ])
 def test_summary_yearly_not_working(year, get_dataset_with_multiple_years, setup_csv_fixture):
+    """
+
+    Args:
+        year ([type]): [description]
+        get_dataset_with_multiple_years ([type]): [description]
+        setup_csv_fixture ([type]): [description]
+    """
     dataset = get_dataset_with_multiple_years
     try:
         assert yearly_summary(year_input=year, parsed_dataset=dataset)
@@ -44,6 +68,12 @@ def test_summary_yearly_not_working(year, get_dataset_with_multiple_years, setup
 
 
 def test_summary_with_empty_dataset(get_empty_dataset, setup_csv_fixture):
+    """
+
+    Args:
+        get_empty_dataset ([type]): [description]
+        setup_csv_fixture ([type]): [description]
+    """
     dataset = get_empty_dataset
     try:
         yearly_summary(year_input="2020", parsed_dataset=dataset)

@@ -10,6 +10,11 @@ def get_empty_dataset():
 
 @fixture
 def get_dataset_with_multiple_years():
+    """
+
+    Returns:
+        [type]: [description]
+    """
     return [
         [datetime(year=2020, month=10, day=22), "CARTE", -11.11, "M DUPONT"],
         [datetime(year=2020, month=7, day=22), "CARTE", -11.11, "M DUPONT"],
@@ -21,6 +26,11 @@ def get_dataset_with_multiple_years():
 
 @fixture(scope="module")
 def get_dataset_year_filter():
+    """
+
+    Returns:
+        [type]: [description]
+    """
     return [
         [datetime(year=2020, month=10, day=22), "CARTE", -11.11, "M DUPONT"],
         [datetime(year=2020, month=10, day=22), "CARTE", 11.11, "M DUPONT"],
@@ -30,6 +40,11 @@ def get_dataset_year_filter():
 
 @fixture(scope="module")
 def get_dataset_total_calculus():
+    """
+
+    Returns:
+        [type]: [description]
+    """
     return [
         [datetime.now(), "CARTE", -11.11, "M DUPONT"],
         [datetime.now(), "CARTE", 11.11, "M DUPONT"],

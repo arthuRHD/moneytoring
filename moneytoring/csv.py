@@ -3,6 +3,14 @@ import os
 
 
 def setup_csv(path=None):
+    """
+
+    Args:
+        path ([type], optional): [description]. Defaults to None.
+
+    Raises:
+        FileNotFoundError: [description]
+    """
     if path is None:
         path = sys.argv[1]
     if not os.path.exists(path):
