@@ -1,4 +1,12 @@
 def get_years(dataset):
+    """
+
+    Args:
+        dataset ([type]): [description]
+
+    Returns:
+        [type]: [description]
+    """
     years = []
     if dataset is not []:
         for row in dataset:
@@ -8,6 +16,15 @@ def get_years(dataset):
 
 
 def get_data_by_year(year_input, dataset):
+    """
+
+    Args:
+        year_input ([type]): [description]
+        dataset ([type]): [description]
+
+    Returns:
+        [type]: [description]
+    """
     year_dataset = []
     if dataset is not []:
         for row in dataset:
@@ -17,6 +34,14 @@ def get_data_by_year(year_input, dataset):
 
 
 def get_total_expenses(dataset):
+    """
+
+    Args:
+        dataset ([type]): [description]
+
+    Returns:
+        [type]: [description]
+    """
     total_expenses = 0
     if dataset is not []:
         for row in dataset:
@@ -26,6 +51,14 @@ def get_total_expenses(dataset):
 
 
 def get_total_incomes(dataset):
+    """
+
+    Args:
+        dataset ([type]): [description]
+
+    Returns:
+        [type]: [description]
+    """
     total_incomes = 0
     if dataset is not []:
         for row in dataset:

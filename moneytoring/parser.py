@@ -4,10 +4,20 @@ from datetime import datetime
 
 
 def get_csv_file_path():
+    """
+
+    Returns:
+        [type]: [description]
+    """
     return path.join(path.dirname(__file__), "transactions.csv")
 
 
 def get_reader():
+    """
+
+    Returns:
+        [type]: [description]
+    """
     csv_reader = None
     if path.exists(get_csv_file_path()):
         csv_reader = reader(open(get_csv_file_path()))
@@ -15,6 +25,11 @@ def get_reader():
 
 
 def get_parsed_data():
+    """
+
+    Returns:
+        [type]: [description]
+    """
     parsed_data = []
     try:
         lines = [line for line in open(get_csv_file_path())]

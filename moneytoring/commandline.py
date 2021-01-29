@@ -4,16 +4,37 @@ from .parser import get_parsed_data
 
 
 def help_cmd():
+    """
+
+    Returns:
+        [type]: [description]
+    """
     print("help command")
     return True
 
 
 def filter_dest():
+    """
+
+    Returns:
+        [type]: [description]
+    """
     print("filter by dest command")
     return True
 
 
 def report_budget(salary_input=None, month_count=None, money_left=None, parsed_dataset=get_parsed_data()):
+    """
+
+    Args:
+        salary_input ([type], optional): [description]. Defaults to None.
+        month_count ([type], optional): [description]. Defaults to None.
+        money_left ([type], optional): [description]. Defaults to None.
+        parsed_dataset ([type], optional): [description]. Defaults to get_parsed_data().
+
+    Returns:
+        [type]: [description]
+    """
     salary_input = sys.argv[1] if salary_input is None else salary_input
     month_count = sys.argv[2] if month_count is None else month_count
     money_left = sys.argv[3] if money_left is None else money_left
@@ -39,6 +60,15 @@ def report_budget(salary_input=None, month_count=None, money_left=None, parsed_d
 
 
 def yearly_summary(year_input=None, parsed_dataset=get_parsed_data()):
+    """
+
+    Args:
+        year_input ([type], optional): [description]. Defaults to None.
+        parsed_dataset ([type], optional): [description]. Defaults to get_parsed_data().
+
+    Returns:
+        [type]: [description]
+    """
     year_input = sys.argv[1] if year_input is None else year_input
     if year_input == "all":
         for year in get_years(parsed_dataset):
@@ -59,6 +89,14 @@ def yearly_summary(year_input=None, parsed_dataset=get_parsed_data()):
 
 
 def summary(parsed_dataset=get_parsed_data()):
+    """
+
+    Args:
+        parsed_dataset ([type], optional): [description]. Defaults to get_parsed_data().
+
+    Returns:
+        [type]: [description]
+    """
     print(
         f"Total dépensé : \033[91m{round(get_total_expenses(parsed_dataset), 2)} €\033[0m")
     print(
